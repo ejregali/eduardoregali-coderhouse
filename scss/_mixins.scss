@@ -1,0 +1,9 @@
+// Mixins
+
+@mixin boton-tarjeta-servicios {
+    padding: 20px;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 25px;
+    text-decoration: none;
+}

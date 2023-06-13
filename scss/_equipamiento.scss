@@ -1,0 +1,74 @@
+/* Estilos Equipamiento */
+
+.titulo__equipamiento{
+
+    display: flex;
+    flex-direction: column;
+    h2{
+        font: $fuente-principal;
+        justify-content: center;
+        text-align: center;
+        padding: 25px 0 0 0;
+        font-size: 2rem;
+        color: rgb(29, 28, 28);
+    }
+    p{
+        color: $color-parrafos;
+        padding: 15px 0px ;
+        font-size: 0.8rem;
+        font-family: 'Quicksand', sans-serif; 
+        text-align: center;
+    }
+}
+
+.card{
+    border: 10px solid;
+    border-color: #f7f7f7;
+    padding: 0 0 15px 0;
+    margin: 0 0 25px 0;
+    width: 360px;
+    
+    .card__primera-seccion__imagen{
+        width: 346px;
+        padding: 30px 0 0 0;
+    }
+
+    .card__segunda-seccion{
+        .card__segunda-seccion__titulo{
+            font: $fuente-principal;
+            color: rgb(0, 0, 0);
+            margin: 15px 25px 15px 25px;
+            text-align: center;
+            }
+        .card__segunda-seccion__descripcion{
+            font-family: 'Quicksand', sans-serif; 
+            color: $color-parrafos;
+            margin: 0 25px 15px 25px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .card__segunda-seccion__boton{
+            background-color: #6d9ccc;
+            border: none;
+            font: $fuente-principal;
+            color: #f7f7f7;
+            font-size: 1rem;
+            padding: 10px;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 620px){
+    .card{
+        border-color: #f7f7f7;
+        width: 900px;
+        margin: auto;
+        .card__primera-seccion__imagen{
+            width: 346px;
+            margin:auto;
+        }
+    }
+}

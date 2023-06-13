@@ -1,0 +1,506 @@
+/* Import */ /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Variables */ /* Estilos Nosotros */
+.nosotros__principal {
+  display: flex;
+  flex-direction: row;
+}
+.nosotros__principal .img__nosotros {
+  width: 25rem;
+  padding: 25px;
+  box-shadow: 20px;
+}
+.nosotros__principal .nosotros__contenido {
+  padding: 40px;
+}
+.nosotros__principal .nosotros__contenido h1 {
+  font: normal 2rem "fjalla one", sans-serif;
+  padding: 0 0 10px 0;
+}
+.nosotros__principal .nosotros__contenido p {
+  color: #7e8285;
+  padding: 15px 0 0px 0;
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+}
+.nosotros__principal .nosotros__contenido .nosotros__sponsors {
+  justify-content: center;
+  align-items: center;
+}
+.nosotros__principal .nosotros__contenido .nosotros__sponsors .img__anac {
+  margin-top: 5px;
+  height: 150px;
+}
+.nosotros__principal .nosotros__contenido .nosotros__sponsors .img__dji {
+  width: 200px;
+}
+
+/* Estilos Servicios */
+.titulo {
+  padding: 60px;
+}
+.titulo h2 {
+  font: normal 2rem "fjalla one", sans-serif;
+  font-size: 3rem;
+  padding: 15px;
+  color: #6d9ccc;
+}
+.titulo p {
+  color: #7e8285;
+  font-size: 1.3rem;
+}
+
+.tarjeta__servicios__contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+.tarjeta__servicios__contenedor .tarjeta__servicios {
+  width: 500px;
+  padding: 0px 0 20PX 0;
+}
+.tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__img {
+  width: 500px;
+}
+.tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__contenido h3 {
+  font: normal 2rem "fjalla one", sans-serif;
+  color: black;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+.tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__contenido p {
+  font-size: 1.2rem;
+  color: #7e8285;
+  padding: 15px 15px;
+}
+.tarjeta__servicios__contenedor .tarjeta__servicios a {
+  padding: 20px;
+  border: none;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .tarjeta__servicios__contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    padding: 0;
+  }
+  .tarjeta__servicios__contenedor .tarjeta__servicios {
+    width: 390px;
+    padding: 25px 0 25px 0;
+    text-align: center;
+  }
+  .tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__img {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__contenido h3 {
+    font: normal 2rem "fjalla one", sans-serif;
+    color: black;
+    font-size: 1.6rem;
+    padding: 15px;
+  }
+  .tarjeta__servicios__contenedor .tarjeta__servicios .tarjeta__servicios__contenido p {
+    font-size: 1.2rem;
+    color: #7e8285;
+    padding: 15px 15px;
+  }
+  .tarjeta__servicios__contenedor .tarjeta__servicios a {
+    padding: 0 0 15px 0;
+    padding: 20px;
+    border: none;
+    font-family: "Fjalla One", sans-serif;
+    margin-top: 25px;
+    text-decoration: none;
+  }
+}
+/* Estilos Equipamiento */
+.titulo__equipamiento {
+  display: flex;
+  flex-direction: column;
+}
+.titulo__equipamiento h2 {
+  font: normal 2rem "fjalla one", sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 0 0 0;
+  font-size: 2rem;
+  color: rgb(29, 28, 28);
+}
+.titulo__equipamiento p {
+  color: #7e8285;
+  padding: 15px 0px;
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.card {
+  border: 10px solid;
+  border-color: #f7f7f7;
+  padding: 0 0 15px 0;
+  margin: 0 0 25px 0;
+  width: 360px;
+}
+.card .card__primera-seccion__imagen {
+  width: 346px;
+  padding: 30px 0 0 0;
+}
+.card .card__segunda-seccion .card__segunda-seccion__titulo {
+  font: normal 2rem "fjalla one", sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 15px 25px 15px 25px;
+  text-align: center;
+}
+.card .card__segunda-seccion .card__segunda-seccion__descripcion {
+  font-family: "Quicksand", sans-serif;
+  color: #7e8285;
+  margin: 0 25px 15px 25px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.card .card__segunda-seccion .card__segunda-seccion__boton {
+  background-color: #6d9ccc;
+  border: none;
+  font: normal 2rem "fjalla one", sans-serif;
+  color: #f7f7f7;
+  font-size: 1rem;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+
+@media (min-width: 620px) {
+  .card {
+    border-color: #f7f7f7;
+    width: 900px;
+    margin: auto;
+  }
+  .card .card__primera-seccion__imagen {
+    width: 346px;
+    margin: auto;
+  }
+}
+/* Estilos Contacto */
+.contact-area {
+  padding: 65px 0 0;
+  position: relative;
+}
+
+.bloqueSeccion {
+  padding-bottom: 115px;
+  padding-top: 115px;
+}
+
+.contact-info {
+  background: #fffaef;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 41px 0;
+}
+
+.contact-info-item {
+  text-align: center;
+  width: 33.3333%;
+}
+
+.contact-info-item a, .contact-info-item p {
+  color: #000;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-info-item .icon {
+  margin-bottom: 24px;
+}
+
+.contact-info-item:nth-child(2n) {
+  border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+}
+
+.btnContacto {
+  margin: 25px 0 25px 0;
+}
+
+/*  Barra de navegacion Bootstrap -----------------------------------------------*/
+.logo {
+  width: 200px;
+  margin-left: 70px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+  margin-right: 70px;
+}
+
+.navbar-toggler-icon {
+  font-size: 1rem;
+}
+
+.nav-item {
+  font-family: fjalla one, sans-serif;
+}
+
+.bg-body-tertiary {
+  position: fixed;
+  width: 100%;
+}
+
+/*  Header ----------------------------------------------- */
+.header_principal_home {
+  background-image: url(../img/bg.jpg);
+  height: 440x;
+  width: 100%;
+  display: flex;
+}
+.header_principal_home .img_header img {
+  width: 950px;
+  transition: all 0.4s;
+  /* margin-left: 100px; */
+  position: relative;
+  top: 90px;
+  left: 50px;
+}
+.header_principal_home .img_header img:hover {
+  width: 1000px;
+  transition: all 0.4s;
+}
+.header_principal_home .header_texto {
+  text-align: right;
+  font-family: "Fjalla One", sans-serif;
+  margin: 100px;
+}
+.header_principal_home .header_texto .h1 {
+  background-color: #6d9ccc;
+  display: inline-block;
+  color: white;
+  font-size: 4rem;
+  padding: 0 10px 0 10px;
+}
+.header_principal_home .header_texto h2 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+}
+
+.header_texto_pages {
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.header_texto_pages h1 {
+  background-color: #6d9ccc;
+  display: inline-block;
+  color: white;
+  font-size: 4em;
+  padding: 0 10px 0 10px;
+}
+
+.btn_header {
+  padding: 10px;
+  border: none;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 25px;
+}
+
+/*  Tarjetas Home ----------------------------------------------- */
+.tarjeta_padre {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.tarjeta_hijo {
+  padding: 0px 25px 0px 25px;
+}
+
+.tarjeta_numero {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: fjalla one, sans-serif;
+  color: #e0e0e0;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.tarjeta_titulo {
+  margin: -65px 0 0 73px;
+  font-size: 1.5rem;
+  font-family: fjalla one, sans-serif;
+  position: relative;
+  top: -53px;
+}
+
+.tarjeta_contenido p {
+  font-family: "Quicksand", sans-serif;
+  color: rgba(34, 45, 53, 0.7);
+  padding: 0px 15px 25px 15px;
+}
+
+.tarjeta_boton a {
+  font-family: fjalla one, sans-serif;
+  text-transform: uppercase;
+  color: #6d9ccc;
+  text-decoration: none;
+}
+
+.tarjeta_icono {
+  width: 60px;
+  position: relative;
+  top: -74px;
+}
+
+.tarjeta_icono2 {
+  width: 60px;
+}
+
+/*  Banner Volemos ----------------------------------------------- */
+.banner {
+  width: auto;
+  height: 500px;
+  /* background-color: #6d9ccc; */
+  background-image: url(../img/img_footer-copyright-1.jpg);
+}
+
+.texto_banner {
+  height: 100px;
+  color: #e0e0e0;
+  font-family: fjalla one, sans-serif;
+  font-size: 4rem;
+}
+
+.espacio_vacio_banner {
+  height: 200px;
+}
+
+.menu_footer {
+  font-family: fjalla one, sans-serif;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/*  Fotter ----------------------------------------------- */
+.footer {
+  height: 100px;
+  width: auto;
+}
+
+.logo_footer {
+  width: 200px;
+}
+
+/*  MediasQ ----------------------------------------------- */
+@media (max-width: 980px) {
+  .header_principal {
+    background-image: url(../img/bg.jpg);
+    height: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 0;
+  }
+  .header_texto {
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    margin: 10px 0 0 0;
+  }
+  .header_texto h1 {
+    background-color: #6d9ccc;
+    color: white;
+    font-size: 2rem;
+  }
+  .header_texto h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+  }
+  .texto_banner {
+    height: 100px;
+    color: #e0e0e0;
+    font-family: fjalla one, sans-serif;
+    font-size: 2.5rem;
+  }
+  .header_texto_pages {
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Fjalla One", sans-serif;
+  }
+  .header_texto_pages h1 {
+    background-color: #6d9ccc;
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+    padding: 0 10px 0 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
