@@ -1,0 +1,21 @@
+SASS en MAC
+
+npm install -g npm@9.7.1    ---------> Actualizar npm
+
+npm config get prefix
+
+npm doctor 
+
+mkdir ~/.npm-global
+
+npm config set prefix '~/.npm-global'
+
+export PATH=~/.npm-global/bin:$PATH
+
+npm doctor
+
+INICIAR SASS
+
+npm install -g sass
+
+sass --watch scss:css
