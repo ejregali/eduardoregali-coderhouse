@@ -38,12 +38,13 @@ text-align: center;
 .bg-body-tertiary {
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 /*  Header ----------------------------------------------- */
 
 .header_principal_home{
     background-image: url(../img/bg.jpg);
-    height: 440x;
+    height: 600px;
     width: 100%;
     display: flex;
 
@@ -209,7 +210,7 @@ font-size: 4rem;
 @media (max-width: 980px){
     .header_principal{
         background-image: url(../img/bg.jpg);
-        height: 290px;
+        height: 400px;
         width: 100%;
         display: flex;
         flex-direction: column;

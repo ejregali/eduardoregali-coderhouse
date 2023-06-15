@@ -1,5 +1,11 @@
 /* Estilos Equipamiento */
 
+.header_principal{
+    background-image: url(../img/bg.jpg);
+    height: 690x;
+    width: 100%;
+    display: flex;
+}
 .titulo__equipamiento{
 
     display: flex;
@@ -27,13 +33,17 @@
     padding: 0 0 15px 0;
     margin: 0 0 25px 0;
     width: 360px;
+    display: flex;
     
+    .card__primera-seccion{
+        width: auto;
+    }
     .card__primera-seccion__imagen{
         width: 346px;
-        padding: 30px 0 0 0;
     }
 
     .card__segunda-seccion{
+
         .card__segunda-seccion__titulo{
             font: $fuente-principal;
             color: rgb(0, 0, 0);
@@ -62,14 +72,35 @@
 }
 
 @media (min-width: 620px){
+    
     .card{
         border-color: #f7f7f7;
-        width: 900px;
+        width: auto;
         margin: auto;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+
         .card__primera-seccion__imagen{
-            width: 346px;
+            width: 400px;
             margin:auto;
+            justify-content: center;
+            align-items: center;
         }
+        .card__segunda-seccion{
+            width: 450px;
+        
+        .card__segunda-seccion__titulo{
+            text-align: left;
+        }
+        .card__segunda-seccion__descripcion{
+            text-align: left;
+        }
+        .card__segunda-seccion__boton{
+            margin: 0 0 0 25px;
+        }
+    }
     }
 }
 

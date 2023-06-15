@@ -173,6 +173,13 @@ table {
   }
 }
 /* Estilos Equipamiento */
+.header_principal {
+  background-image: url(../img/bg.jpg);
+  height: 690x;
+  width: 100%;
+  display: flex;
+}
+
 .titulo__equipamiento {
   display: flex;
   flex-direction: column;
@@ -199,10 +206,13 @@ table {
   padding: 0 0 15px 0;
   margin: 0 0 25px 0;
   width: 360px;
+  display: flex;
+}
+.card .card__primera-seccion {
+  width: auto;
 }
 .card .card__primera-seccion__imagen {
   width: 346px;
-  padding: 30px 0 0 0;
 }
 .card .card__segunda-seccion .card__segunda-seccion__titulo {
   font: normal 2rem "fjalla one", sans-serif;
@@ -231,12 +241,30 @@ table {
 @media (min-width: 620px) {
   .card {
     border-color: #f7f7f7;
-    width: 900px;
+    width: auto;
     margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
   }
   .card .card__primera-seccion__imagen {
-    width: 346px;
+    width: 400px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .card__segunda-seccion {
+    width: 450px;
+  }
+  .card .card__segunda-seccion .card__segunda-seccion__titulo {
+    text-align: left;
+  }
+  .card .card__segunda-seccion .card__segunda-seccion__descripcion {
+    text-align: left;
+  }
+  .card .card__segunda-seccion .card__segunda-seccion__boton {
+    margin: 0 0 0 25px;
   }
 }
 /* Estilos Contacto */
@@ -310,12 +338,13 @@ table {
 .bg-body-tertiary {
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 /*  Header ----------------------------------------------- */
 .header_principal_home {
   background-image: url(../img/bg.jpg);
-  height: 440x;
+  height: 600px;
   width: 100%;
   display: flex;
 }
@@ -462,7 +491,7 @@ table {
 @media (max-width: 980px) {
   .header_principal {
     background-image: url(../img/bg.jpg);
-    height: 290px;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
