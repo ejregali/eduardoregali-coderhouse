@@ -1,5 +1,7 @@
 SASS en MAC
 
+npm init
+
 npm install -g npm@9.7.1    ---------> Actualizar npm
 
 npm config get prefix
