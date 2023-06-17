@@ -195,7 +195,7 @@ table {
 .titulo__equipamiento p {
   color: #7e8285;
   padding: 15px 0px;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
@@ -219,12 +219,13 @@ table {
   color: rgb(0, 0, 0);
   margin: 15px 25px 15px 25px;
   text-align: center;
+  font-size: 2.5rem;
 }
 .card .card__segunda-seccion .card__segunda-seccion__descripcion {
   font-family: "Quicksand", sans-serif;
   color: #7e8285;
   margin: 0 25px 15px 25px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 .card .card__segunda-seccion .card__segunda-seccion__boton {
@@ -239,9 +240,20 @@ table {
 }
 
 @media (min-width: 620px) {
+  .titulo__equipamiento {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo__equipamiento h2 {
+    font-size: 3rem;
+  }
+  .titulo__equipamiento p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
   .card {
     border-color: #f7f7f7;
-    width: auto;
+    width: 900px;
     margin: auto;
     margin-bottom: 25px;
     display: flex;

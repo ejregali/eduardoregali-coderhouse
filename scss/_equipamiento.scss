@@ -21,7 +21,7 @@
     p{
         color: $color-parrafos;
         padding: 15px 0px ;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         font-family: 'Quicksand', sans-serif; 
         text-align: center;
     }
@@ -49,12 +49,13 @@
             color: rgb(0, 0, 0);
             margin: 15px 25px 15px 25px;
             text-align: center;
+            font-size: 2.5rem;
             }
         .card__segunda-seccion__descripcion{
             font-family: 'Quicksand', sans-serif; 
             color: $color-parrafos;
             margin: 0 25px 15px 25px;
-            font-size: 0.8rem;
+            font-size: 1rem;
             text-align: center;
         }
 
@@ -72,10 +73,23 @@
 }
 
 @media (min-width: 620px){
-    
+    .titulo__equipamiento{
+
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+    }
+
     .card{
         border-color: #f7f7f7;
-        width: auto;
+        width: 900px;
         margin: auto;
         margin-bottom: 25px;
         display: flex;
