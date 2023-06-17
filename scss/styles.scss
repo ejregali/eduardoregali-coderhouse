@@ -70,14 +70,14 @@ text-align: center;
 
                 h1{   
                     color: rgb(255, 255, 255);
-                    font-size: 5rem;
+                    font-size: 3.5rem;
                     background-color: #6d9ccc;
                     text-align: center;
                     padding: 5px;
-                    
+                    display: inline-block;
                 }
                 h2{
-                    display: inline-block;
+                    
                     color: white;
                     font-size: 3.5rem;
                     padding: 25px 10px 25px 10px
@@ -121,6 +121,7 @@ width: 100%;
 
 .tarjeta_hijo{
     padding: 0px 25px 0px 25px;
+    margin-bottom: 10px;
 }
 
 .tarjeta_numero{
@@ -220,7 +221,7 @@ font-size: 4rem;
 
     .header_principal_home{
         background-image: url(../img/bg.jpg);
-        height: 440px;
+        height: 450px;
         width: 100%;
         display: flex;
         margin: 0 auto;
@@ -242,16 +243,17 @@ font-size: 4rem;
     
                     h1{   
                         color: rgb(255, 255, 255);
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                         background-color: #6d9ccc;
                         text-align: center;
-                        padding: 5px;                        
+                        padding: 5px;    
+                        display: inline-block;                     
                     }
                     h2{
-                        display: inline-block;
                         color: white;
                         font-size: 1rem;
                         text-align: center;
+                        padding: 10px 10px 25px 10px;
                         
                     }
             }
@@ -276,4 +278,9 @@ margin: auto;
         
         }
 }        
+
+.texto_banner{
+font-size: 2.5rem;
+}
+
 }

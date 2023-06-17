@@ -1,42 +1,100 @@
 /* Estilos Nosotros */
 
-.nosotros__principal{
+.card-nosotros{
 
-//background-color: aquamarine;
-display: flex;
-flex-direction: row;
 
-    .img__nosotros{
-        width: 25rem;
-        padding: 25px;
-        box-shadow: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .card-nosotros__primera-seccion{
+
+        display: flex;
+        justify-content: center;
+
+        .card-nosotros__primera-seccion__imagen{
+            width: 300px;
+            padding: 20px 0 20px 0;
+        }
     }
 
-    .nosotros__contenido{
-        padding: 40px;
-        h1{
+    .card-nosotros__inter-seccion{
+        display: flex;
+        flex-direction: column;
+
+        .card-nosotros__segunda-seccion{
+        
+        width: 350px;
+        margin: auto;
+
+        .card-nosotros__segunda-seccion__titulo{
             font: $fuente-principal;
-            padding: 0 0 10px 0;
+            margin: 0 0 0 25px;
+            font-size: 1.5rem;
+            
         }
-        p{
-            color: $color-parrafos;
-            padding: 15px 0 0px 0;
-            font-size: 1.1rem;
-            font-family: 'Quicksand', sans-serif;
+        .card-nosotros__segunda-seccion__parrafo-negrita{
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0 0 0 25px;
+            font-weight: bold;
+            padding: 5px 5px 5px 0;
 
         }
-        .nosotros__sponsors{
-            //background-color: bisque;
-            justify-content: center;
-            align-items: center;
-            .img__anac{
-                margin-top: 5px;
-            height: 150px;
-        }
-            .img__dji{
-            width: 200px;
-        }
+        .card-nosotros__segunda-seccion__parrafo{
+            font-family: 'Quicksand', sans-serif; 
+            margin: 0 0 0 25px;
+            padding: 5px 5px 5px 0;
+            color: $color-parrafos;
+
         }
         
+    }
+    .card-nosotros__tercera-seccion{
+
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px;
+
+        .card-nosotros__tercera-seccion__imagen-anac{
+            width: 200px;
+        }
+        .card-nosotros__tercera-seccion__imagen-dji{
+            width: 130px;
+            padding: 5px;
+
+        }
+    }
+}
+}
+
+// Media Querys
+
+@media (min-width: 620px){
+
+    .card-nosotros{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px 0 0 25px;
+    
+    }
+    .card-nosotros__inter-seccion{
+
+        .card-nosotros__tercera-seccion{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 25px;
+
+            .card-nosotros__tercera-seccion__imagen-anac{
+                width: 200px;
+            }
+            .card-nosotros__tercera-seccion__imagen-dji{
+                width: 130px;
+                padding: 5px;
+
+            }
+        }
     }
 }

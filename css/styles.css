@@ -53,40 +53,77 @@ table {
 }
 
 /* Variables */ /* Estilos Nosotros */
-.nosotros__principal {
+.card-nosotros {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.nosotros__principal .img__nosotros {
-  width: 25rem;
-  padding: 25px;
-  box-shadow: 20px;
-}
-.nosotros__principal .nosotros__contenido {
-  padding: 40px;
-}
-.nosotros__principal .nosotros__contenido h1 {
-  font: normal 2rem "fjalla one", sans-serif;
-  padding: 0 0 10px 0;
-}
-.nosotros__principal .nosotros__contenido p {
-  color: #7e8285;
-  padding: 15px 0 0px 0;
-  font-size: 1.1rem;
-  font-family: "Quicksand", sans-serif;
-}
-.nosotros__principal .nosotros__contenido .nosotros__sponsors {
+.card-nosotros .card-nosotros__primera-seccion {
+  display: flex;
   justify-content: center;
-  align-items: center;
 }
-.nosotros__principal .nosotros__contenido .nosotros__sponsors .img__anac {
-  margin-top: 5px;
-  height: 150px;
+.card-nosotros .card-nosotros__primera-seccion .card-nosotros__primera-seccion__imagen {
+  width: 300px;
+  padding: 20px 0 20px 0;
 }
-.nosotros__principal .nosotros__contenido .nosotros__sponsors .img__dji {
+.card-nosotros .card-nosotros__inter-seccion {
+  display: flex;
+  flex-direction: column;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__segunda-seccion {
+  width: 350px;
+  margin: auto;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__segunda-seccion .card-nosotros__segunda-seccion__titulo {
+  font: normal 2rem "fjalla one", sans-serif;
+  margin: 0 0 0 25px;
+  font-size: 1.5rem;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__segunda-seccion .card-nosotros__segunda-seccion__parrafo-negrita {
+  font-family: "Quicksand", sans-serif;
+  margin: 0 0 0 25px;
+  font-weight: bold;
+  padding: 5px 5px 5px 0;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__segunda-seccion .card-nosotros__segunda-seccion__parrafo {
+  font-family: "Quicksand", sans-serif;
+  margin: 0 0 0 25px;
+  padding: 5px 5px 5px 0;
+  color: #7e8285;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__tercera-seccion {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__tercera-seccion .card-nosotros__tercera-seccion__imagen-anac {
   width: 200px;
 }
+.card-nosotros .card-nosotros__inter-seccion .card-nosotros__tercera-seccion .card-nosotros__tercera-seccion__imagen-dji {
+  width: 130px;
+  padding: 5px;
+}
 
+@media (min-width: 620px) {
+  .card-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 0 25px;
+  }
+  .card-nosotros__inter-seccion .card-nosotros__tercera-seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+  .card-nosotros__inter-seccion .card-nosotros__tercera-seccion .card-nosotros__tercera-seccion__imagen-anac {
+    width: 200px;
+  }
+  .card-nosotros__inter-seccion .card-nosotros__tercera-seccion .card-nosotros__tercera-seccion__imagen-dji {
+    width: 130px;
+    padding: 5px;
+  }
+}
 /* Estilos Servicios */
 .titulo {
   padding: 60px;
@@ -127,6 +164,7 @@ table {
   font-size: 1.2rem;
   color: #7e8285;
   padding: 15px 15px;
+  font-family: "Quicksand", sans-serif;
 }
 .tarjeta__servicios__contenedor .tarjeta__servicios a {
   padding: 20px;
@@ -382,13 +420,13 @@ table {
 }
 .header_principal_home .header_texto h1 {
   color: rgb(255, 255, 255);
-  font-size: 5rem;
+  font-size: 3.5rem;
   background-color: #6d9ccc;
   text-align: center;
   padding: 5px;
+  display: inline-block;
 }
 .header_principal_home .header_texto h2 {
-  display: inline-block;
   color: white;
   font-size: 3.5rem;
   padding: 25px 10px 25px 10px;
@@ -426,6 +464,7 @@ table {
 
 .tarjeta_hijo {
   padding: 0px 25px 0px 25px;
+  margin-bottom: 10px;
 }
 
 .tarjeta_numero {
@@ -509,7 +548,7 @@ table {
 @media (max-width: 630px) {
   .header_principal_home {
     background-image: url(../img/bg.jpg);
-    height: 440px;
+    height: 450px;
     width: 100%;
     display: flex;
     margin: 0 auto;
@@ -530,16 +569,17 @@ table {
   }
   .header_principal_home .header_texto h1 {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #6d9ccc;
     text-align: center;
     padding: 5px;
+    display: inline-block;
   }
   .header_principal_home .header_texto h2 {
-    display: inline-block;
     color: white;
     font-size: 1rem;
     text-align: center;
+    padding: 10px 10px 25px 10px;
   }
   .header_principal {
     margin: auto;
@@ -556,6 +596,9 @@ table {
     color: white;
     font-size: 3em;
     padding: 25px 10px 25px 10px;
+  }
+  .texto_banner {
+    font-size: 2.5rem;
   }
 }
 
