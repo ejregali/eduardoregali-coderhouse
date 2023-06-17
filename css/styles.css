@@ -227,13 +227,13 @@ table {
   justify-content: center;
   text-align: center;
   padding: 25px 0 0 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(29, 28, 28);
 }
 .titulo__equipamiento p {
   color: #7e8285;
   padding: 15px 0px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
@@ -318,48 +318,21 @@ table {
   }
 }
 /* Estilos Contacto */
-.contact-area {
-  padding: 65px 0 0;
-  position: relative;
+.form-label {
+  padding: 5px;
 }
 
-.bloqueSeccion {
-  padding-bottom: 115px;
-  padding-top: 115px;
+.form-control {
+  margin: auto 0;
+  width: 100%;
 }
 
-.contact-info {
-  background: #fffaef;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  padding: 41px 0;
-}
-
-.contact-info-item {
-  text-align: center;
-  width: 33.3333%;
-}
-
-.contact-info-item a, .contact-info-item p {
-  color: #000;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact-info-item .icon {
-  margin-bottom: 24px;
-}
-
-.contact-info-item:nth-child(2n) {
-  border-left: 2px solid #e0e0e0;
-  border-right: 2px solid #e0e0e0;
-}
-
-.btnContacto {
-  margin: 25px 0 25px 0;
+.btn {
+  padding: 20px;
+  border: none;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 25px;
+  text-decoration: none;
 }
 
 /*  Barra de navegacion Bootstrap -----------------------------------------------*/
